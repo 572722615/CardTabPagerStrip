@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">"CustomTabPagerStrip "</string>
+    <string name="my_card">我的会员卡</string>
+    <string name="draw_card">领取的会员卡</string>
+</resources>

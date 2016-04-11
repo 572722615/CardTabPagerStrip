@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9147">
+
+    <View
+        android:id="@+id/head_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DEDFE0" />
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_line"
+        android:background="#FF9147"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp">
+
+        <com.view.chip.customtabpagerstrip.MyCardTabPagerStrip
+            android:id="@+id/tab_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:background="#FF9147"
+         />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_layout"
+        android:background="@drawable/select"
+        android:contentDescription="@null"
+        android:scaleType="matrix" />
+
+    <View
+        android:id="@+id/cursor_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/cursor"
+        android:layout_marginTop="7dp"
+        android:background="#00000000" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cursor_line"
+        android:background="#9b9b9b" />
+
+
+
+
+</RelativeLayout>
